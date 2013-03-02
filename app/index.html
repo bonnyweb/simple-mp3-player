@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+	<title>My Simple Mp3 Player</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+	<script src="vendors/jquery/jquery-1.8.1.min.js"></script>
+	<script src="vendors/soundmanager-v2/script/soundmanager2-nodebug-jsmin.js"></script>
+	<!--<script src="vendors/soundmanager-v2/script/soundmanager2.js"></script>-->
+	<script src="js/simple-mp3-player.js"></script>
+</head>
+<body>
+
+	<h1> My Simple Mp3 Player </h1>
+
+	<!-- INTERFACE markup -->
+	<div class="simple-mp3-player-wrap" id="simpleMp3Player">
+	  <button class="simple-mp3-player-play-pause" data-mp3="mp3/echonic-cronophasia.mp3">PLAY</button>
+	  <button class="simple-mp3-player-stop">STOP</button>
+	  <div class="simple-mp3-player-mouse-pointer-area">
+	    <div class="simple-mp3-player-play-loading-bar-wrap">
+	        <div class="simple-mp3-player-play-bar"></div>
+	        <div class="simple-mp3-player-loading-bar"></div>
+	        <div class="simple-mp3-player-mouse-pointer"></div>
+	    </div>
+	  </div>
+	</div>
+	<!-- // INTERFACE markup -->
+	
+	<script type="text/javascript">
+		soundManager.setup({
+		  url: 'vendors/soundmanager-v2/swf/',
+		  wmode: 'transparent',
+		  debugMode: false,
+		  debugFlash: false,
+		  useHighPerformance: true,
+		  onready: function () {
+			  var player   = new SimpleMp3Player('#simpleMp3Player');
+		  },
+		  ontimeout: function() {
+		    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+		    console.log("Error");
+		  }
+		});
+	</script>
+
+</body>
+</html>
