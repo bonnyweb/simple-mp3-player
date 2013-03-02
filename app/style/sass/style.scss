@@ -34,37 +34,4 @@ $loadingBarWidth : 220px;
 	}
 }
 
-#paSimpleMp3Player {
 
-	.simple-mp3-player-mouse-pointer-area {
-		width:24px;
-		padding:10px 0;
-	}
-
-	.simple-mp3-player-play-loading-bar-wrap{
-		position:relative;
-		width:24px;
-		height:8px;
-		background: #eee;
-		
-		.simple-mp3-player-play-bar , .simple-mp3-player-loading-bar , .simple-mp3-player-mouse-pointer{
-			position: absolute;
-			height: 100%;
-		}
-		.simple-mp3-player-play-bar{
-			z-index:100;
-			background: #999;
-		}
-		.simple-mp3-player-loading-bar{
-			z-index: 90;
-			background : rgba(159,187,226,0.3);
-		}
-		.simple-mp3-player-mouse-pointer {
-			display: none;
-			width:2px;
-			z-index: 130;
-			background : rgba(159,187,226,1);
-		}
-			
-	}
-}

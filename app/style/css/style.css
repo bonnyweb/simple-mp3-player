@@ -20,26 +20,3 @@
     width: 2px;
     z-index: 130;
     background: #9fbbe2; }
-
-#paSimpleMp3Player .simple-mp3-player-mouse-pointer-area {
-  width: 24px;
-  padding: 10px 0; }
-#paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap {
-  position: relative;
-  width: 24px;
-  height: 8px;
-  background: #eee; }
-  #paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap .simple-mp3-player-play-bar, #paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap .simple-mp3-player-loading-bar, #paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap .simple-mp3-player-mouse-pointer {
-    position: absolute;
-    height: 100%; }
-  #paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap .simple-mp3-player-play-bar {
-    z-index: 100;
-    background: #999; }
-  #paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap .simple-mp3-player-loading-bar {
-    z-index: 90;
-    background: rgba(159, 187, 226, 0.3); }
-  #paSimpleMp3Player .simple-mp3-player-play-loading-bar-wrap .simple-mp3-player-mouse-pointer {
-    display: none;
-    width: 2px;
-    z-index: 130;
-    background: #9fbbe2; }
